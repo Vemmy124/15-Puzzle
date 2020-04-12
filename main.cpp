@@ -6,7 +6,6 @@
 #include <vector>
 #include <algorithm>
 #include <cassert>
-#include <iomanip>
 
 const int SQRT_BOARD_SIZE = 4;
 const int BOARD_SIZE = SQRT_BOARD_SIZE * SQRT_BOARD_SIZE;
@@ -648,10 +647,10 @@ int main()
 
     cout << distance << endl;
     for( int i = 0; i < distance; ++i ) {
-        if( Route[i] == 1 ) cout << 'L';
-        if( Route[i] == 0 ) cout << 'R';
-        if( Route[i] == 2 ) cout << 'D';
-        if( Route[i] == 3 ) cout << 'U';
+        if( Route[i] == 1 ) cout << 'R';
+        if( Route[i] == 0 ) cout << 'L';
+        if( Route[i] == 2 ) cout << 'U';
+        if( Route[i] == 3 ) cout << 'D';
     }
 
     return 0;
